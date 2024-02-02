@@ -30,7 +30,8 @@
 
 ## 🚩 使用的套件與輔助工具
 
-- [Hover.css](https://ianlunn.github.io/Hover/)
+- 動態按鈕 - [Hover.css](https://ianlunn.github.io/Hover/)
+- 色卡 - [Color Hunt](https://colorhunt.co/palettes/popular)
 
 ## 🚩 過程中的疑問紀錄
 

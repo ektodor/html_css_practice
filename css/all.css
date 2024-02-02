@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 共用屬性 */
+
+a,
+p {
+  font-size: 25px;
+  font-family: verdana;
+  line-height: 1.5;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* index */
+.index.container {
+  background-color: #fff8e3;
+  height: 100vh;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.index.container a {
+  background-color: #f3d7ca;
+  width: 250px;
+  height: 150px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #6c6c6c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.index.container .hvr-underline-reveal:before {
+  background: #e6a4b4;
+  height: 10px;
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+.index.container .hvr-underline-reveal:hover:before,
+.index.container .hvr-underline-reveal:focus:before,
+.index.container .hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+/* finalAssignment */
+
+/* resume */
+
+/* multiPage */
