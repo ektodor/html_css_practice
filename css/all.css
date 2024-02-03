@@ -129,19 +129,60 @@ table {
 }
 
 /* 共用屬性 */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 a,
-p {
-  font-size: 25px;
-  font-family: verdana;
-  line-height: 1.5;
-  padding: 10px;
-  text-align: center;
-  font-weight: 600;
+p,
+h1,
+h2,
+h3,
+label,
+li,
+span,
+input {
+  font-family: "Microsoft JhengHei UI";
+  text-decoration: none;
+  color: black;
+}
+
+a,
+p,
+label {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+th {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1920px;
+  min-width: 1080px;
+  margin: 0 auto;
 }
 
 /* index */
-.index.container {
+.index {
+  width: 100%;
   background-color: #fff8e3;
   height: 100vh;
   display: flex;
@@ -150,7 +191,7 @@ p {
   align-items: center;
   flex-wrap: wrap;
 }
-.index.container a {
+.index a {
   background-color: #f3d7ca;
   width: 250px;
   height: 150px;
@@ -160,21 +201,220 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+  font-size: 25px;
+  line-height: 1.5;
 }
-.index.container .hvr-underline-reveal:before {
+.index .hvr-underline-reveal:before {
   background: #e6a4b4;
   height: 10px;
   -webkit-transform: translateY(10px);
   transform: translateY(10px);
 }
-.index.container .hvr-underline-reveal:hover:before,
-.index.container .hvr-underline-reveal:focus:before,
-.index.container .hvr-underline-reveal:active:before {
+.index .hvr-underline-reveal:hover:before,
+.index .hvr-underline-reveal:focus:before,
+.index .hvr-underline-reveal:active:before {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
 /* finalAssignment */
+/* gloabel */
+.final-assignment .header-social ul,
+.header-social li a,
+.header-logo,
+.header-logo ul,
+.header-banner,
+.main,
+.main-item,
+.main-item > li,
+.main-img,
+.main-table,
+.main-info,
+.info-content,
+.info-message,
+footer {
+  display: flex;
+}
+.final-assignment .header-social ul,
+.header-logo,
+.header-banner h1,
+.main-item,
+.main-table,
+footer {
+  width: 1080px;
+  margin: 0 auto;
+}
+/* header */
+.final-assignment .header-social {
+  background: #f6f6f8;
+}
+.final-assignment .header-social ul {
+  padding: 4px 0;
+  justify-content: end;
+}
 
+.final-assignment .header-social li a {
+  gap: 5px;
+}
+.final-assignment .header-social li a:active {
+  color: #6c6c6c;
+}
+/* li a 後面加 border */
+.final-assignment .header-social li a::after {
+  content: "";
+  border: 1px solid #cccccc;
+  margin: 0 12px;
+}
+/* 最後一個 li 的 a 之後  */
+.final-assignment .header-social li:last-of-type a::after {
+  content: none;
+}
+.final-assignment .header-logo {
+  justify-content: space-between;
+  padding: 18px 0;
+}
+.final-assignment .header-logo > a {
+  width: 150.06px;
+  height: 36px;
+  text-indent: 101%;
+  text-wrap: nowrap;
+  overflow: hidden;
+  background: url("../images/final_assignment_img/hexschool-logo.png") no-repeat;
+}
+.final-assignment .header-logo ul {
+  align-items: center;
+  gap: 42px;
+
+  font-weight: 700;
+}
+.final-assignment .header-logo li {
+  padding: 8px 0;
+}
+.final-assignment .header-banner {
+  height: 390px;
+  overflow: hidden;
+  background: url("../images/final_assignment_img/header_background.png")
+    no-repeat;
+  align-items: center;
+}
+.final-assignment .header-banner div {
+  background: #ffffff26;
+  width: 100%;
+}
+.final-assignment .header-banner h1 {
+  padding: 27px 0 26px 94px;
+}
+.final-assignment .fb a {
+  color: #4267b2;
+}
+.final-assignment .twitter a {
+  color: #1da1f2;
+}
+/* main */
+.final-assignment .main {
+  flex-direction: column;
+  gap: 60px;
+}
+.final-assignment .main-item {
+  margin-top: 60px;
+  gap: 30px;
+  justify-content: space-between;
+}
+.final-assignment .main-item > li {
+  gap: 12px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 24px;
+  box-shadow: 0px 0px 10px #00000029;
+}
+.final-assignment .main-item > li h3 {
+  text-align: center;
+}
+.final-assignment .main-img {
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-assignment .main-table {
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.final-assignment .main-table table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 85%;
+}
+.final-assignment .main-table table tr {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.final-assignment .main-table table th,
+td {
+  text-align: left;
+  padding: 6px;
+}
+.final-assignment .main-table table tr:not(:first-child):hover {
+  background: yellow;
+}
+.final-assignment .special-text {
+  color: #00cc99;
+  font-weight: 700;
+}
+.final-assignment .main-info {
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 0;
+  background: linear-gradient(to bottom, #e4fff8, #a2ddce);
+}
+.final-assignment .main-info h3 {
+  text-align: center;
+  line-height: 28.8px;
+}
+.final-assignment .info-content {
+  gap: 30px;
+  margin: 28px 0 32px 0;
+}
+.final-assignment .info-content label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+.final-assignment .info-content input {
+  min-width: 351px;
+  min-height: 38px;
+  padding: 7px 10px;
+  border: 1px solid #aaaaaa;
+}
+.final-assignment .info-content input:focus,
+textarea:focus {
+  outline: none;
+  border: 3px solid orange;
+}
+.final-assignment .info-message {
+  flex-direction: column;
+}
+.final-assignment .info-message textarea {
+  height: 100%;
+  min-width: 350px;
+}
+.final-assignment .main-info > button {
+  background-color: #00251a;
+  color: white;
+  border: 1px solid #00251a;
+  padding: 10px 64px;
+  cursor: pointer;
+}
+
+/* footer */
+.final-assignment footer {
+  justify-content: space-between;
+  padding: 16px 0;
+  align-items: center;
+  line-height: 24px;
+}
 /* resume */
 
 /* multiPage */

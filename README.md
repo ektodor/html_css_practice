@@ -38,3 +38,5 @@
 ❓ 資料夾結構中可以有多個 index.html 嗎 ?! 像是 finalAssignment/index.html 或是 resume/index.html 等等 ?!
 
 ❓ 在檔案命名與資料夾結構是否需要做修正，或是資料夾結構如何設計會更好 ?! 如 images 是否需要再用資料夾區分 resume 圖檔和 multiPage 圖檔 ?!
+
+❓ 目前市面上圖檔使用 SVG 多還是 PNG 多 ?!
